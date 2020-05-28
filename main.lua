@@ -1,3 +1,5 @@
+require("game.common")
+
 CONFIG = {
 
     graphics = {
@@ -59,9 +61,11 @@ function love.draw()
 	
 	love.graphics.setFont(Font.regular)
 	love.graphics.setColor(255, 255, 255, 255)
-	love.graphics.print("Hello World!", 400, 300)
+	echo("Hello World!", 400, 300, {255,25,25})
 	
 	love.graphics.setFont(Font.monospace)
 	love.graphics.setColor(255, 255, 255, 255)
-	love.graphics.print("Hello World!", 400, 400)
+	echo("Hello World!", 400, 400, {25,25,255})
+
+	love.graphics.setColor(255, 255, 255, 255)
 end

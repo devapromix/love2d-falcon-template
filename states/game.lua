@@ -24,7 +24,7 @@ end
 
 function game:draw()
 	love.graphics.draw(back, 0, 0)
-	love.graphics.print("Hello World!", 400, 200)
+	echo("Hello World!", 400, 200, {255,255,255})
 end
 
 return game
