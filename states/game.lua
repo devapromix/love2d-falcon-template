@@ -23,8 +23,8 @@ function game:mousepressed(x, y, mbutton)
 end
 
 function game:draw()
-	love.graphics.draw(back, 0, 0)
-	echo("Hello World!", 400, 200, {255,255,255})
+	love.graphics.draw(Resources.Image.back, 0, 0)
+	echo("Hello World!", 400, 200, COLOR.white)
 end
 
 return game
