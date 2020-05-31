@@ -7,15 +7,13 @@ local Resources = {
 
 function Resources.load()
 	-- Fonts
-	Resources.Fonts.debug = love.graphics.newFont("assets/fonts/RobotoMono-Regular.ttf", 12)
-	Resources.Fonts.monospace = love.graphics.newFont("assets/fonts/RobotoMono-Regular.ttf", 20)
-	Resources.Fonts.regular = love.graphics.newFont("assets/fonts/Roboto-Regular.ttf", 30)
+	Resources.Fonts.default = love.graphics.newFont("assets/fonts/Font.ttf", 12)
 
 	-- Musics
-	Resources.Audio.mainMenu = love.audio.newSource("assets/musics/soliloquy.mp3", "stream")	
+	Resources.Audio.mainMenu = love.audio.newSource("assets/musics/stellardrone.mp3", "stream")	
 	
 	-- Images
-	Resources.Image.back = love.graphics.newImage("assets/images/back.png")
+	Resources.Image.back = love.graphics.newImage("assets/images/wallpaper.png")
 
 	-- Icons
 	Resources.Image.icon = 'assets/images/icons/icon.png'

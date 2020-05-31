@@ -24,7 +24,7 @@ end
 
 function game:draw()
 	love.graphics.draw(Resources.Image.back, 0, 0)
-	echo("Hello World!", 400, 200, COLOR.white)
+	echo("Falcon Template for Love2D!", 400, 200, COLOR.white)
 end
 
 return game

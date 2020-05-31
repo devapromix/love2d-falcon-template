@@ -29,11 +29,11 @@ function love.load()
 end
 
 function love.draw()
-	love.graphics.setFont(Resources.Fonts.regular)
+	love.graphics.setFont(Resources.Fonts.default)
     State.current():draw()
 	if debugMode then
-		love.graphics.setColor(COLOR.darkbrown)
-		love.graphics.setFont(Resources.Fonts.debug)
+		love.graphics.setColor(COLOR.offwhite)
+		love.graphics.setFont(Resources.Fonts.default)
 		love.graphics.print("DEBUG MODE", 8, 8)
 		love.graphics.print("FPS: " .. tostring(love.timer.getFPS()), 8, 20)
 	end
