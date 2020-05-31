@@ -1,5 +1,6 @@
 require("game.common")
 
+Ini			= require("libs.ini")
 State		= require("libs.state")
 Class		= require("libs.class")
 Resources 	= require("game.resources")
@@ -13,11 +14,6 @@ screenWidth, screenHeight = love.graphics.getDimensions()
 function love.load()
 	-- Load resources
 	Resources.load()
-	local callbacks = {'update'}
-	for k in pairs(love.handlers) do
-		callbacks[#callbacks+1] = k
-	end
-	State.registerEvents(callbacks)
 
 	-- Screenshot
 	if not love.filesystem.exists("screenshot") then
