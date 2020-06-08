@@ -16,6 +16,14 @@ COLOR = {
 	green       = { 105, 188, 109 },
 }
 
+function pointInRect(px, py, rx, ry, rw, rh)
+	if px > rx and px < rx + rw and py > ry and py < ry + rh then
+		return true
+	else 
+		return false 
+	end
+end
+
 function echo(s, x, y, c)
 	x, y = math.floor(x), math.floor(y)
 	love.graphics.setColor(25, 25, 25, 255)
