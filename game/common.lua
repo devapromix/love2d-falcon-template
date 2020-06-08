@@ -24,6 +24,14 @@ function pointInRect(px, py, rx, ry, rw, rh)
 	end
 end
 
+function clamp(val, min, max)
+	return math.max(min, math.min(val, max))
+end
+
+function randomBool()
+	if math.random() >= 0.5 then return true else return false end
+end
+
 function echo(s, x, y, c)
 	x, y = math.floor(x), math.floor(y)
 	love.graphics.setColor(25, 25, 25, 255)
